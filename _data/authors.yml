@@ -2,15 +2,15 @@
 
 Apoorv Umang Saxena:
   name        : "Apoorv Umang Saxena"
-  bio         : "PhD student at Indian Institute of Science"
+  bio         : "Research Scientist at Adobe Research, Bangalore"
   avatar      : "/assets/images/apoorv.jpg"
   links:
     - label: "Bangalore, India"
       icon: "fas fa-fw fa-map-marker-alt"
       url: /
-    - label: "apoorvsaxena [at] iisc.ac.in"
+    - label: "apoorvs [at] adobe.com"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:apoorvsaxena@iisc.ac.in"
+      url: "mailto:apoorvs@adobe.com"
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://www.github.com/apoorvumang/"
