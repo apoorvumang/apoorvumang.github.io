@@ -4,8 +4,9 @@ author_profile: true
 author: Apoorv Umang Saxena
 toc: true
 ---
+I am a research scientist at [Adobe Research, Bangalore](https://research.adobe.com/careers/bangalore/) with a research focus on NLP and multi-modal machine learning.
 
-I am a 4th year PhD candidate in the Department of Computational and Data Sciences (CDS) at the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/) with a research focus on Machine Learning and related areas. I am supervised by [Prof. Partha Pratim Talukdar](http://talukdar.net/), and have been affiliated with the Machine And Language Learning Lab (MALL Lab) since August 2018.
+Previously I was a PhD candidate in the Department of Computational and Data Sciences (CDS) at the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/). I was supervised by [Prof. Partha Pratim Talukdar](http://talukdar.net/).
 
 Prior to graduate school, I received my Bachelor of Engineering (BE Hons.) in Computer Science from [Birla Institute of Technology and Science, Pilani (BITS Pilani)](http://www.bits-pilani.ac.in/) in 2015.
 
@@ -52,6 +53,9 @@ A. Gautam, __A. U. Saxena__, P. Mall and S. Mohan, ["Positioning multiple mobile
 
 ## Work Experience
 
+### Adobe Research, Bangalore
+Research Scientist — June 2022 - Present
+
 ### IBM Research, Bangalore
 Research Intern — Summer 2019
 
@@ -69,11 +73,11 @@ Software Engineer 1 — July 2015 - November 2015
 
 ### Email
 
-apoorvsaxena [at] iisc.ac.in
+apoorvs [at] adobe.com
 <br />
 apoorvumang [at] gmail.com
 
-### Lab Address
+<!-- ### Lab Address
 
 _303, Department of Computational and Data Sciences (CDS)_
-
+ -->
