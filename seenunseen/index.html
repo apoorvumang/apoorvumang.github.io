@@ -6,10 +6,21 @@
 
     $(function() {
     
+        
 
+        
+
+        var loadFromGithub = false
+        if (loadFromGithub==true) {
+            metadata_url = 'https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/metadata.json'
+            base_url_for_episode = 'https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/transcripts_chat/E'
+        } else {
+            metadata_url = 'metadata.json'
+            base_url_for_episode = 'transcripts_chat/E'
+        }
 
    // read in the json file metadata.json
-    $.getJSON('https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/metadata.json', function(data) {
+    $.getJSON(metadata_url, function(data) {
 
         //reverse the order of the episodes
         data.reverse();

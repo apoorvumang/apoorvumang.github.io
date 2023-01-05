@@ -24,9 +24,19 @@
 
     var epnum_int = parseInt(epnum)
 
+    var loadFromGithub = false
+
+    if (loadFromGithub==true) {
+        metadata_url = 'https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/metadata.json'
+        base_url_for_episode = 'https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/transcripts_chat/E'
+    } else {
+        metadata_url = 'metadata.json'
+        base_url_for_episode = 'transcripts_chat/E'
+    }
+
 
    // read in the json file metadata.json
-    $.getJSON('https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/metadata.json', function(data) {
+    $.getJSON(metadata_url, function(data) {
 
         episode_data = data[epnum_int-1]
         episode_title = episode_data['title']
@@ -43,7 +53,7 @@
     });
 
 //    $.getJSON('chats/E' + epnum + '.json', function(data) {
-   $.getJSON('https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/transcripts_chat/E' + epnum + '.json', function(data) {
+   $.getJSON(base_url_for_episode + epnum + '.json', function(data) {
        $.each(data, function(i, f) {
           // f.time is string formatted like 'hh:mm:ss.sss'
           // make string time_small which is 'hh:mm:ss'
