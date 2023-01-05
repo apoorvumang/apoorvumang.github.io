@@ -1,0 +1,67 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+
+    $(function() {
+    
+
+
+   // read in the json file metadata.json
+    $.getJSON('https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/metadata.json', function(data) {
+
+        //reverse the order of the episodes
+        data.reverse();
+        // loop through data as episode_data
+        $.each(data, function(i, episode_data) {
+            episode_num = episode_data['epnum']
+            // get the episode title
+            episode_title = episode_data['title']
+            // get the episode description
+            episode_description = episode_data['description']
+            // get the episode date published
+            episode_date_published = episode_data['date_published']
+            // get the episode url
+            episode_url_audio = episode_data['url']
+            console.log(episode_url_audio)
+            episode_url = '/seenunseen/chat.html?epnum=' + episode_num
+            // make a link to the episode
+            var tblRow = "<tr>" + "<td><a href=" + episode_url + ">" + episode_title + "</a></td>" +
+                "<td>" + episode_description + "</td>" + "<td>" + episode_date_published + "</td>" + 
+                "<td>" + "<a href=\"" + episode_url_audio + "\">Link</a>" + "</td></tr>"
+             $(tblRow).appendTo("#chat tbody");
+        });
+            
+    });
+
+
+});
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <h1>The Seen and the Unseen - Transcripts</h1>
+    <h2>Machine-generated transcriptions of the <a href="https://seenunseen.in/">seen and the unseen</a> podcast by <a href="https://amitvarma.com/">Amit Varma</a></h2>
+    <h3 id="date-published"></h3>
+    <p id="episode-description"></p>
+<div class="profile">
+   <table id= "chat" border="2">
+        <thead>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Audio</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
+
+</body>
+</html>

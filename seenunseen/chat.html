@@ -1,0 +1,85 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+
+    $(function() {
+    
+   
+
+   // read the GET request parameter epnum
+    var urlParams = new URLSearchParams(window.location.search);
+    var epnum = urlParams.get('epnum');
+    // check if epnum is provided or not
+    if (epnum == null) {
+        epnum = '01'
+    }
+    console.log(epnum)
+
+    // check if epnum is a single character or not
+    if (epnum.length == 1) {
+        epnum = '0' + epnum
+    }
+
+    var epnum_int = parseInt(epnum)
+
+
+   // read in the json file metadata.json
+    $.getJSON('https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/metadata.json', function(data) {
+
+        episode_data = data[epnum_int-1]
+        episode_title = episode_data['title']
+        episode_description = episode_data['description']
+        episode_date_published = episode_data['date_published']
+        episode_url = episode_data['url']
+        // set the title and description in the html
+        $('#episode-title').text(episode_title)
+        // set description in html. links etc should be rendered
+        $('#episode-description').html(episode_description)
+        $('#date-published').text('Date published: ' + episode_date_published)
+        // set the episode url
+        $('#episode-url').attr('href', episode_url)
+    });
+
+//    $.getJSON('chats/E' + epnum + '.json', function(data) {
+   $.getJSON('https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/transcripts_chat/E' + epnum + '.json', function(data) {
+       $.each(data, function(i, f) {
+          // f.time is string formatted like 'hh:mm:ss.sss'
+          // make string time_small which is 'hh:mm:ss'
+        var time_small = f.time.slice(0,8)
+          var tblRow = "<tr id=" + time_small + ">" + "<td>" + f.speaker + "</td>" +
+           "<td>" + time_small + "</td>" + "<td>" + f.message + "</td>" + "</tr>"
+           $(tblRow).appendTo("#chat tbody");
+     });
+
+   });
+
+});
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <h1 id="episode-title"></h1>
+    <h3 id="date-published"></h3>
+    <h4><a id="episode-url">Click here for original episode</a></h4>
+    <p id="episode-description"></p>
+<div class="profile">
+   <table id= "chat" border="2">
+        <thead>
+            <th>Speaker</th>
+            <th>Time</th>
+            <th>Message</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
+
+</body>
+</html>
