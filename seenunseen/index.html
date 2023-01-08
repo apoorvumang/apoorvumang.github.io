@@ -1,15 +1,12 @@
 <html>
 <head>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
 <script>
 
     $(function() {
     
-        
-
-        
-
         var loadFromGithub = false
         if (loadFromGithub==true) {
             metadata_url = 'https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/metadata.json'
@@ -19,30 +16,57 @@
             base_url_for_episode = 'transcripts_chat/E'
         }
 
+        function stripHTML(html) {
+            var div = document.createElement("div");
+            div.innerHTML = html;
+            return div.textContent || div.innerText || "";
+            }
+
    // read in the json file metadata.json
     $.getJSON(metadata_url, function(data) {
 
         //reverse the order of the episodes
         data.reverse();
         // loop through data as episode_data
-        $.each(data, function(i, episode_data) {
-            episode_num = episode_data['epnum']
-            // get the episode title
-            episode_title = episode_data['title']
-            // get the episode description
-            episode_description = episode_data['description']
-            // get the episode date published
-            episode_date_published = episode_data['date_published']
-            // get the episode url
-            episode_url_audio = episode_data['url']
-            console.log(episode_url_audio)
-            episode_url = '/seenunseen/chat.html?epnum=' + episode_num
-            // make a link to the episode
-            var tblRow = "<tr>" + "<td><a href=" + episode_url + ">" + episode_title + "</a></td>" +
-                "<td>" + episode_description + "</td>" + "<td>" + episode_date_published + "</td>" + 
-                "<td>" + "<a href=\"" + episode_url_audio + "\">Link</a>" + "</td></tr>"
-             $(tblRow).appendTo("#chat tbody");
-        });
+        // $.each(data, function(i, episode_data) {
+        //     episode_num = episode_data['epnum']
+        //     // get the episode title
+        //     episode_title = episode_data['title']
+        //     // get the episode description
+        //     episode_description = episode_data['description']
+        //     // get the episode date published
+        //     episode_date_published = episode_data['date_published']
+        //     // get the episode url
+        //     episode_url_audio = episode_data['url']
+        //     console.log(episode_url_audio)
+        //     episode_url = '/seenunseen/chat.html?epnum=' + episode_num
+        //     // make a link to the episode
+        //     var tblRow = "<tr>" + "<td><a href=" + episode_url + ">" + episode_title + "</a></td>" +
+        //         "<td>" + episode_description + "</td>" + "<td>" + episode_date_published + "</td>" + 
+        //         "<td>" + "<a href=\"" + episode_url_audio + "\">Link</a>" + "</td></tr>"
+        //      $(tblRow).appendTo("#chat tbody");
+        // });
+
+        let html = '';
+
+        $.each(data, (index, episode) => {
+            html += `
+            <div class="p-4 border-b border-gray-200">
+                <h2 class="text-xl font-bold text-gray-800">
+                    <a class="text-blue-600 hover:text-blue-800 underline" href="chat.html?epnum=${episode.epnum}">${episode.title}</a></h3>
+                <p class="text-sm text-gray-600 mb-2">Date Published: ${episode.date_published}</p>
+                <p class="text-gray-700 mb-4">${stripHTML(episode.description)}</p>
+            </div>
+            `;
+            });
+
+            $('.episodes_list').html(html);
+
+            // <div class="mt-4 text-gray-600">
+            //         <span class="mr-2">Release date: ${episode.date_published}</span><span class="mr-2">Click for audio: <a href="${episode.url}">Link</a></span>
+            //     </div>
+
+
             
     });
 
@@ -51,27 +75,29 @@
 </script>
 </head>
 
-<body>
+<body class="bg-gray-100">
 
-<div class="wrapper">
-    <h1>The Seen and the Unseen - Transcripts</h1>
-    <h2>Machine-generated transcriptions of the <a href="https://seenunseen.in/">seen and the unseen</a> podcast by <a href="https://amitvarma.com/">Amit Varma</a></h2>
-    <h3 id="date-published"></h3>
-    <p id="episode-description"></p>
-<div class="profile">
-   <table id= "chat" border="2">
-        <thead>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Date</th>
-            <th>Audio</th>
-        </thead>
-      <tbody>
+<div class="container mx-auto py-4">
+    <h1 class="text-2xl font-bold text-gray-800 mb-4">The Seen and the Unseen - Transcripts</h1>
+    <p class="text-gray-700 mb-4">
+        Machine-generated transcriptions of the <a href="https://seenunseen.in/">seen and the unseen</a> podcast by <a href="https://amitvarma.com/">Amit Varma</a>. More information
+        about how this was done can be found <a href="https://github.com/apoorvumang/seenunseen-whisper">here</a>.
+    </p>
+    <!-- <h2 class="px-4"></h2> -->
+    <div class="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 mb-4 rounded relative" role="alert">
+        <strong class="font-bold">Note:</strong>
+        <span class="block sm:inline">All transcripts and section headings were machine generated. At times they may be <b>incorrect</b> and <b>hallucinate information</b> not talked about 
+            in the podcast. Please use with caution.
+        </span>
+      </div>
 
-       </tbody>
-   </table>
+    <div class="episodes_list bg-white rounded-lg shadow-md overflow-hidden">
+        
+            <!-- <ul class="episodes_list list-none px-4">
 
-</div>
+            </ul> -->
+        
+    </div>
 </div>
 
 </body>

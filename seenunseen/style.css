@@ -1,0 +1,10 @@
+body a {
+    color: text-blue-600;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+body a:hover {
+color: text-blue-800;
+}
+  
