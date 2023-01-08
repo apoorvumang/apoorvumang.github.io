@@ -1,7 +1,23 @@
 <html>
 <head>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<style>
+.container {
+    display: flex;
+  }
+  
+  .navigation-container {
+    overflow-y: auto;
+  }
+  
+  .content-container {
+    flex: 1;
+    overflow-y: auto;
+  }
 
+</style>
 <script>
 
     $(function() {
@@ -20,6 +36,36 @@
         epnum = '0' + epnum
     }
 
+    // function that takes input a list of messages, and returns the unique speakers
+    function get_speakers(messages) {
+        var speakers = []
+        for (var i=0; i<messages.length; i++) {
+            var speaker = messages[i]['speaker']
+            if (speakers.includes(speaker) == false) {
+                speakers.push(speaker)
+            }
+        }
+        return speakers
+    }
+
+    //function that takes input speaker name, and returns a color
+    function get_color(speaker) {
+        // For Unknown color is gray
+        // for Amit Varma color is green
+        // for Guests, choose from below list in order
+        if(speaker == 'Unknown') {
+            return 'gray'
+        } else if (speaker == 'Amit Varma') {
+            return 'green'
+        } else if (speaker == 'Guest') {
+            return 'blue'
+        } else {
+            var colors = ['purple', 'pink', 'orange', 'red', 'blue', 'yellow', ]
+            var color = colors[speaker.charCodeAt(6) % colors.length]
+            return color
+        }
+    }
+
     var epnum_int = parseInt(epnum)
 
     var loadFromGithub = false
@@ -27,9 +73,11 @@
     if (loadFromGithub==true) {
         metadata_url = 'https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/metadata.json'
         base_url_for_episode = 'https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/transcripts_chat/E'
+        base_url_titles = 'https://raw.githubusercontent.com/apoorvumang/seenunseen-whisper/main/flant5_titles/E'
     } else {
         metadata_url = 'metadata.json'
         base_url_for_episode = 'transcripts_chat/E'
+        base_url_titles = 'flant5_titles/E'
     }
 
 
@@ -42,23 +90,56 @@
         episode_date_published = episode_data['date_published']
         episode_url = episode_data['url']
         // set the title and description in the html
-        $('#episode-title').text(episode_title)
+        $('.episode-title').text(episode_title)
         // set description in html. links etc should be rendered
-        $('#episode-description').html(episode_description)
+        $('.episode-description').html(episode_description)
         $('#date-published').text('Date published: ' + episode_date_published)
         // set the episode url
         $('#episode-url').attr('href', episode_url)
     });
 
-//    $.getJSON('chats/E' + epnum + '.json', function(data) {
+    // read in the titles file for the episode
+    $.getJSON(base_url_titles + epnum + '_titles.json', function(data) {
+        // add the titles to the navigation panel
+        $.each(data, function(i, f) {
+            var time_small = f.time.slice(0,8)
+            var navLink = "<a class='block p-2 text-gray-800 hover:bg-gray-200' href='#" + time_small + "'>" + f.title + "</a>"
+            $(navLink).appendTo("aside");
+        });
+    });
+
    $.getJSON(base_url_for_episode + epnum + '.json', function(data) {
        $.each(data, function(i, f) {
           // f.time is string formatted like 'hh:mm:ss.sss'
           // make string time_small which is 'hh:mm:ss'
         var time_small = f.time.slice(0,8)
-          var tblRow = "<tr id=" + time_small + ">" + "<td>" + f.speaker + "</td>" +
-           "<td>" + time_small + "</td>" + "<td>" + f.message + "</td>" + "</tr>"
-           $(tblRow).appendTo("#chat tbody");
+
+        var alignment = 'ml-auto'
+        // if speaker is one of Amit Varma or Unknown, align to mr-auto
+        // make alist of 2 string elements
+        var left_speakers = ['Amit Varma', 'Unknown']
+        if (left_speakers.includes(f.speaker)) {
+            alignment = 'mr-auto'
+        }
+        var speaker_color = get_color(f.speaker)
+
+        var html = `
+            <div class="w-full lg:w-3/4 lg:${alignment}">
+                    <div class="bg-${speaker_color}-100 rounded-lg shadow-lg p-4 mb-2">
+                      <div class="mb-2 flex items-center">
+                        <div class="text-xs font-semibold text-gray-600" id = "${time_small}">${f.speaker}</div>
+                        <div class="ml-2 text-xs text-gray-600">[${time_small}]</div>
+                      </div>
+                      <p class="text-gray-700 leading-relaxed" >${f.message}</p>
+                    </div>
+                  </div>
+            `;
+        // add the message to the chat
+        $(html).appendTo(".chat-div");
+
+        //   var tblRow = "<tr id=" + time_small + ">" + "<td>" + f.speaker + "</td>" +
+        //    "<td>" + time_small + "</td>" + "<td>" + f.message + "</td>" + "</tr>"
+        //    $(tblRow).appendTo("#chat tbody");
      });
 
    });
@@ -67,27 +148,70 @@
 </script>
 </head>
 
-<body>
+<body class="bg-gray-200">
 
-<div class="wrapper">
-    <h1 id="episode-title"></h1>
-    <h3 id="date-published"></h3>
-    <h4><a id="episode-url">Click here for original episode</a></h4>
-    <p id="episode-description"></p>
-<div class="profile">
-   <table id= "chat" border="2">
-        <thead>
-            <th>Speaker</th>
-            <th>Time</th>
-            <th>Message</th>
-        </thead>
-      <tbody>
+    <div class="container h-screen">
+        <!-- Navigation panel -->
+        <div class="navigation-container w-1/4 h-full">
+          <aside class="h-screen top-0">
+            <!-- Navigation links go here -->
 
-       </tbody>
-   </table>
+          </aside>
+        </div>
+  
+        <!-- Content -->
+        <div class="content-container w-full overflow-y-auto  mx-auto p-4 bg-white rounded-lg shadow-lg ">
+            <h1 class="episode-title text-2xl font-bold text-gray-800 mb-4"></h1>
+            <p class="episode-description text-gray-700 mb-4"></p>
+            <!-- <h2 class="px-4"></h2> -->
+            <div class="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 mb-4 rounded relative" role="alert">
+                <strong class="font-bold">Note:</strong>
+                <span class="block sm:inline">All transcripts and section headings were machine generated. At times they may be <b>incorrect</b> and <b>hallucinate information</b> not talked about 
+                    in the podcast. Please use with caution.
+                </span>
+            </div>
+            <!---chat start-->
+            <div class="chat-div lg:justify-between justify-end">
+           
 
-</div>
-</div>
+            </div>
+            <!--chat end-->
+           
+        </div>
+      </div>
+
 
 </body>
 </html>
+
+
+
+                <!-- <h3 id="date-published"></h3>
+                <h4><a id="episode-url">Click here for original episode</a></h4>
+                <p id="episode-description"></p>
+            <div class="profile">
+            <table id= "chat" border="2">
+                    <thead>
+                        <th>Speaker</th>
+                        <th>Time</th>
+                        <th>Message</th>
+                    </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div> -->
+
+
+
+
+        <!-- <div class="w-full lg:w-1/2 lg:mr-4">
+            <div class="bg-white rounded-lg shadow-lg p-4">
+              <div class="mb-2 flex items-center">
+                <img class="w-8 h-8 rounded-full mr-2" src="avatar1.jpg" alt="Avatar 1">
+                <div class="text-xs font-semibold text-gray-600">Speaker 1</div>
+                <div class="ml-2 text-xs text-gray-600">[Time]</div>
+              </div>
+              <p class="text-gray-700 leading-relaxed">Message text goes here</p>
+            </div>
+          </div> -->
