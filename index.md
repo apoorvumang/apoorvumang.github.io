@@ -65,6 +65,20 @@ Software Engineer, Tools and Infrastructure — May 2016 - Mar 2017
 ### PayPal, Chennai
 Software Engineer 1 — July 2015 - November 2015
 
+## Side Projects
+
+### Podcast transcription and highlight generation
+
+I used openai-whisper (along with pyannote and flan-t5) to automatically generate transcripts and highlights for all episodes of The Seen and The Unseen
+podcast by Amit Varma. These can be browsed at [https://apoorvumang.github.io/seenunseen](https://apoorvumang.github.io/seenunseen) <br> <br>
+<button>
+<a style="text-decoration: none;" href="https://apoorvumang.github.io/seenunseen"><i class="fas fa-play"></i> Website</a>
+</button>
+<button>
+<a style="text-decoration: none;" href="https://github.com/apoorvumang/seenunseen-whisper"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</a>
+</button>
+
+
 ## CV
 
 [PDF]({{site.url}}/download/CV.pdf)
