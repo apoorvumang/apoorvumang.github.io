@@ -6,7 +6,7 @@ toc: true
 ---
 I am a research scientist at [Adobe Research, Bangalore](https://research.adobe.com/careers/bangalore/) with a research focus on NLP and multi-modal machine learning.
 
-Previously I was a PhD candidate in the Department of Computational and Data Sciences (CDS) at the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/). I was supervised by [Prof. Partha Pratim Talukdar](http://talukdar.net/).
+I received my PhD from the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/) where I was advised by [Prof. Partha Pratim Talukdar](http://talukdar.net/).
 
 Prior to graduate school, I received my Bachelor of Engineering (BE Hons.) in Computer Science from [Birla Institute of Technology and Science, Pilani (BITS Pilani)](http://www.bits-pilani.ac.in/) in 2015.
 
