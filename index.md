@@ -6,7 +6,7 @@ toc: true
 ---
 I am a research scientist at [Adobe Research, Bangalore](https://research.adobe.com/careers/bangalore/) with a research focus on NLP and multi-modal machine learning.
 
-Previously I received my PhD from the Department of Computational and Data Sciences (CDS) at the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/)
+Previously I received my PhD from the Department of Computational and Data Sciences (CDS) at the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/).
 
 Prior to graduate school, I received my Bachelor of Engineering (BE Hons.) in Computer Science from [Birla Institute of Technology and Science, Pilani (BITS Pilani)](http://www.bits-pilani.ac.in/) in 2015.
 
@@ -21,8 +21,7 @@ During my undergraduate studies I worked on humanoid robotics and computer visio
 
 ## Research publications
 **Saxena A.** [Prompt Lookup Decoding](https://github.com/apoorvumang/prompt-lookup-decoding). 
-
-Developed a method to speed-up LLM decoding, integrated in transformers and vLLM.
+Developed a method to speed-up LLM decoding, integrated in transformers and vLLM.<br>
 <button>
 <a style="text-decoration: none;" href="https://github.com/apoorvumang/prompt-lookup-decoding"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</a>
 </button>
