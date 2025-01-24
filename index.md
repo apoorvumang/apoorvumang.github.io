@@ -6,18 +6,28 @@ toc: true
 ---
 I am a research scientist at [Adobe Research, Bangalore](https://research.adobe.com/careers/bangalore/) with a research focus on NLP and multi-modal machine learning.
 
-Previously I received my PhD from the Department of Computational and Data Sciences (CDS) at the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/). I was supervised by [Prof. Partha Pratim Talukdar](http://talukdar.net/).
+Previously I received my PhD from the Department of Computational and Data Sciences (CDS) at the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/)
 
 Prior to graduate school, I received my Bachelor of Engineering (BE Hons.) in Computer Science from [Birla Institute of Technology and Science, Pilani (BITS Pilani)](http://www.bits-pilani.ac.in/) in 2015.
 
 
 ## Research
 
-I am broadly interested in generative AI (NLP, computer vision) and their applications. In my post-graduate work, I had a specific focus on knowledge graphs (KG) and question answering. In this area, I have tried to improve QA performance by combining pre-trained language models with KG embeddings. I have also worked on making KG embeddings more scalable and easier to apply to downstream tasks.
+I am broadly interested in generative AI (LLMs, computer vision) and their applications. In my current role at Adobe, my research mainly focuses on enhancing the utility of LLMs for document-grounded tasks, such as summarization and question answering. This includes [optimizing inference speed for document-centric tasks](https://github.com/apoorvumang/prompt-lookup-decoding) and developing methods to [attribute LLM outputs back to the documents](https://arxiv.org/abs/2405.17980). I am also interested in design generation applications, specifically with (V)LLMs.
+
+In my post-graduate work, I had a specific focus on knowledge graphs (KG) and question answering. In this area, I have tried to improve QA performance by combining pre-trained language models with KG embeddings. I have also worked on making KG embeddings more scalable and easier to apply to downstream tasks.
 During my undergraduate studies I worked on humanoid robotics and computer vision.
 
 
-## Publications
+## Research publications
+**Saxena A.** [Prompt Lookup Decoding](https://github.com/apoorvumang/prompt-lookup-decoding). 
+
+Developed a method to speed-up LLM decoding, integrated in transformers and vLLM.
+<button>
+<a style="text-decoration: none;" href="https://github.com/apoorvumang/prompt-lookup-decoding"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</a>
+</button>
+
+
 **Saxena A.**, Kochsiek A. & Gemulla R. [“Sequence-to-Sequence Knowledge Graph Completion and Question Answering”](https://arxiv.org/abs/2203.10321). Accepted to the 2022 Annual Conference of the Association for Computational Linguistics (ACL 2022).<br>
 <button>
 <a style="text-decoration: none;" href="https://huggingface.co/spaces/apoorvumang/kgt5"><i class="fas fa-play"></i> Demo</a>
