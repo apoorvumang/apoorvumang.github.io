@@ -104,7 +104,7 @@ podcast by Amit Varma. These can be browsed at [https://apoorvumang.github.io/se
 
 ## CV
 
-[PDF]({{site.url}}/download/CV.pdf)
+[PDF]({{site.url}}/download/Apoorv_Resume_CV_June_2025.pdf)
 
 ## Contact
 
