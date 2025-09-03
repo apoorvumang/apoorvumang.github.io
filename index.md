@@ -62,8 +62,9 @@ A. Gautam, __A. U. Saxena__, P. Mall and S. Mohan, ["Positioning multiple mobile
 
 ## Work Experience
 
-### Inception Labs (Remote from Bangalore)
+### Inception Labs
 Member of Technical Staff — September 2024 - Present
+Remote from Bangalore
 
 ### Adobe Research, Bangalore
 Research Scientist — June 2022 - August 2024
