@@ -2,15 +2,15 @@
 
 Apoorv Umang Saxena:
   name        : "Apoorv Umang Saxena"
-  bio         : "Research Scientist at Adobe Research, Bangalore"
+  bio         : "Member of Technical Staff at Inception Labs (remote from Bangalore)"
   avatar      : "/assets/images/apoorv.jpg"
   links:
     - label: "Bangalore, India"
       icon: "fas fa-fw fa-map-marker-alt"
       url: /
-    - label: "apoorvs [at] adobe.com"
+    - label: "apoorv [at] inceptionlabs.ai"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:apoorvs@adobe.com"
+      url: "mailto:apoorv@inceptionlabs.ai"
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://www.github.com/apoorvumang/"
