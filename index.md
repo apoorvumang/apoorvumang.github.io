@@ -4,9 +4,9 @@ author_profile: true
 author: Apoorv Umang Saxena
 toc: true
 ---
-I am a Member of Technical Staff at [Inception Labs](https://inceptionlabs.ai), working remotely from Bangalore, with a research focus on NLP and multi-modal machine learning.
+I am a Member of Technical Staff at [Inception Labs](https://inceptionlabs.ai), working remotely from Bangalore. Previously I was a Research Scientist at Adobe Research with a focus on NLP and multi-modal machine learning.
 
-Previously I received my PhD from the Department of Computational and Data Sciences (CDS) at the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/).
+I received my PhD from the Department of Computational and Data Sciences (CDS) at the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/).
 
 Prior to graduate school, I received my Bachelor of Engineering (BE Hons.) in Computer Science from [Birla Institute of Technology and Science, Pilani (BITS Pilani)](http://www.bits-pilani.ac.in/) in 2015.
 
