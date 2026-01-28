@@ -84,11 +84,11 @@ Software Engineer 1 — July 2015 - November 2015
 
 Get custom-designed products, including personalized fridge magnets, desk signs, house nameplates and more! Order your own unique items via the store or follow the latest creations on our Instagram :)
 
-Store: [everything-3d.mini.store](https://everything-3d.mini.store/)  
+Store: [everything3dindia.com](https://everything3dindia.com/)  
 Instagram: [everything_3d_india](https://www.instagram.com/everything_3d_india/)
 
 <button>
-<a style="text-decoration: none;" href="https://everything-3d.mini.store/"><i class="fas fa-store"></i> Visit Store</a>
+<a style="text-decoration: none;" href="https://everything3dindia.com/"><i class="fas fa-store"></i> Visit Store</a>
 </button>
 <button>
 <a style="text-decoration: none;" href="https://www.instagram.com/everything_3d_india/"><i class="fab fa-instagram"></i> Follow on Instagram</a>
