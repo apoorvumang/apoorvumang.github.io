@@ -25,6 +25,12 @@ Developed a method to speed-up LLM decoding, integrated in transformers and vLLM
 <button>
 <a style="text-decoration: none;" href="https://github.com/apoorvumang/prompt-lookup-decoding"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</a>
 </button>
+<button>
+<a style="text-decoration: none;" href="https://x.com/joao_gante/status/1747322413006643259"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i> X Post</a>
+</button>
+<button>
+<a style="text-decoration: none;" href="https://docs.vllm.ai/en/latest/features/speculative_decoding/n_gram/"><i class="fas fa-fw fa-book" aria-hidden="true"></i> vLLM Docs</a>
+</button>
 
 
 **Saxena A.**, Kochsiek A. & Gemulla R. [“Sequence-to-Sequence Knowledge Graph Completion and Question Answering”](https://arxiv.org/abs/2203.10321). Accepted to the 2022 Annual Conference of the Association for Computational Linguistics (ACL 2022).<br>
