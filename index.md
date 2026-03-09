@@ -4,7 +4,7 @@ author_profile: true
 author: Apoorv Umang Saxena
 toc: true
 ---
-I am a Member of Technical Staff at [Inception Labs](https://inceptionlabs.ai), working remotely from Bangalore. Previously I was a Research Scientist at Adobe Research with a focus on NLP and multi-modal machine learning.
+I am a Member of Technical Staff at [Inception](https://inceptionlabs.ai), working from our Bangalore office. Previously I was a Research Scientist at Adobe Research with a focus on NLP and multi-modal machine learning.
 
 I received my PhD from the Department of Computational and Data Sciences (CDS) at the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/).
 
@@ -15,7 +15,6 @@ Prior to graduate school, I received my Bachelor of Engineering (BE Hons.) in Co
 
 I am broadly interested in generative AI (LLMs, computer vision) and their applications. My recent work has focused on enhancing the utility of LLMs for document-grounded tasks, such as summarization and question answering. This includes [optimizing inference speed for document-centric tasks](https://github.com/apoorvumang/prompt-lookup-decoding) and developing methods to [attribute LLM outputs back to the documents](https://arxiv.org/abs/2405.17980). I am also interested in design generation applications, specifically with (V)LLMs.
 
-In my post-graduate work, I had a specific focus on knowledge graphs (KG) and question answering. In this area, I have tried to improve QA performance by combining pre-trained language models with KG embeddings. I have also worked on making KG embeddings more scalable and easier to apply to downstream tasks.
 During my undergraduate studies I worked on humanoid robotics and computer vision.
 
 
@@ -62,9 +61,8 @@ A. Phukan, S. Somasundaram, **A. Saxena**, K. Goswami & B.V. Srinivasan. ["Peeri
 
 ## Work Experience
 
-### Inception Labs
+### Inception, Bangalore
 Member of Technical Staff — September 2024 - Present
-Remote from Bangalore
 
 ### Adobe Research, Bangalore
 Research Scientist — June 2022 - August 2024
@@ -118,7 +116,3 @@ apoorv [at] inceptionlabs.ai
 <br />
 apoorvumang [at] gmail.com
 
-<!-- ### Lab Address
-
-_303, Department of Computational and Data Sciences (CDS)_
- -->
