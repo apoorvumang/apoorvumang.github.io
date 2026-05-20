@@ -62,10 +62,10 @@ A. Phukan, S. Somasundaram, **A. Saxena**, K. Goswami & B.V. Srinivasan. ["Peeri
 ## Work Experience
 
 ### Inception, Bangalore
-Member of Technical Staff — September 2024 - Present
+Member of Technical Staff — September 2025 - Present
 
 ### Adobe Research, Bangalore
-Research Scientist — June 2022 - August 2024
+Research Scientist — June 2022 - August 2025
 
 ### IBM Research, Bangalore
 Research Intern — Summer 2019
@@ -115,4 +115,3 @@ podcast by Amit Varma. These can be browsed at [https://apoorvumang.github.io/se
 apoorv [at] inceptionlabs.ai
 <br />
 apoorvumang [at] gmail.com
-
