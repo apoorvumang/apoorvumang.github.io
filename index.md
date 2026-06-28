@@ -6,7 +6,7 @@ toc: true
 ---
 I am a Member of Technical Staff at [Inception](https://inceptionlabs.ai), working from our Bangalore office. Previously I was a Research Scientist at Adobe Research with a focus on NLP and multi-modal machine learning.
 
-I received my PhD from the Department of Computational and Data Sciences (CDS) at the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/).
+I received my PhD from the Department of Computational and Data Sciences (CDS) at the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/), where I worked on knowledge graph embeddings for question answering ([thesis](https://etd.iisc.ac.in/handle/2005/6082)).
 
 Prior to graduate school, I received my Bachelor of Engineering (BE Hons.) in Computer Science from [Birla Institute of Technology and Science, Pilani (BITS Pilani)](http://www.bits-pilani.ac.in/) in 2015.
 
@@ -16,6 +16,40 @@ Prior to graduate school, I received my Bachelor of Engineering (BE Hons.) in Co
 I am broadly interested in generative AI (LLMs, computer vision) and their applications. My recent work has focused on enhancing the utility of LLMs for document-grounded tasks, such as summarization and question answering. This includes [optimizing inference speed for document-centric tasks](https://github.com/apoorvumang/prompt-lookup-decoding) and developing methods to [attribute LLM outputs back to the documents](https://arxiv.org/abs/2405.17980). I am also interested in design generation applications, specifically with (V)LLMs.
 
 During my undergraduate studies I worked on humanoid robotics and computer vision.
+
+
+## Projects
+
+### Everything 3D
+
+Get custom 3D-printed figurines and personalized keepsakes made from your photos. Order a unique gift from the store or follow the latest creations on Instagram :)
+
+Store: [everything3dindia.com](https://everything3dindia.com/)  
+Instagram: [everything_3d_india](https://www.instagram.com/everything_3d_india/)
+
+<button>
+<a style="text-decoration: none;" href="https://everything3dindia.com/"><i class="fas fa-store"></i> Visit Store</a>
+</button>
+<button>
+<a style="text-decoration: none;" href="https://www.instagram.com/everything_3d_india/"><i class="fab fa-instagram"></i> Follow on Instagram</a>
+</button>
+
+### TokenPath.ai
+
+TokenPath is an API for grounding AI-agent outputs by tracing generated tokens back to the exact source tokens behind them. It grew out of my research on attribution in document-grounded question answering, and provides token-level attribution signals for precise citations, provenance, hallucination gates, and evals.
+
+Website: [tokenpath.ai](https://tokenpath.ai/)  
+Docs: [docs.tokenpath.ai](https://docs.tokenpath.ai/)
+
+<button>
+<a style="text-decoration: none;" href="https://tokenpath.ai/"><i class="fas fa-link"></i> Website</a>
+</button>
+<button>
+<a style="text-decoration: none;" href="https://docs.tokenpath.ai/"><i class="fas fa-fw fa-book" aria-hidden="true"></i> Docs</a>
+</button>
+<button>
+<a style="text-decoration: none;" href="https://arxiv.org/abs/2405.17980"><i class="fas fa-file-alt"></i> Research</a>
+</button>
 
 
 ## Selected publications
@@ -72,40 +106,6 @@ Software Engineer, Tools and Infrastructure — May 2016 - Mar 2017
 
 ### PayPal, Chennai
 Software Engineer 1 — July 2015 - November 2015
-
-## Projects
-
-### Custom Figurines: Everything 3D
-
-Everything 3D turns photos into personalized 3D-printed keepsakes, with a current focus on custom figurines for people, couples, teams, and events. Customers send photos, review 3D render options, and receive in-house printed, hand-finished pieces that preserve the likeness, outfit, and overall vibe.
-
-Store: [everything3dindia.com](https://everything3dindia.com/)  
-Instagram: [everything_3d_india](https://www.instagram.com/everything_3d_india/)
-
-<button>
-<a style="text-decoration: none;" href="https://everything3dindia.com/"><i class="fas fa-store"></i> Visit Store</a>
-</button>
-<button>
-<a style="text-decoration: none;" href="https://www.instagram.com/everything_3d_india/"><i class="fab fa-instagram"></i> Follow on Instagram</a>
-</button>
-
-### TokenPath.ai
-
-TokenPath is an API for grounding AI-agent outputs by tracing generated tokens back to the exact source tokens behind them. It grew out of my research on attribution in document-grounded question answering, and provides token-level attribution signals for precise citations, provenance, hallucination gates, and evals.
-
-Website: [tokenpath.ai](https://tokenpath.ai/)  
-Docs: [docs.tokenpath.ai](https://docs.tokenpath.ai/)
-
-<button>
-<a style="text-decoration: none;" href="https://tokenpath.ai/"><i class="fas fa-link"></i> Website</a>
-</button>
-<button>
-<a style="text-decoration: none;" href="https://docs.tokenpath.ai/"><i class="fas fa-fw fa-book" aria-hidden="true"></i> Docs</a>
-</button>
-<button>
-<a style="text-decoration: none;" href="https://arxiv.org/abs/2405.17980"><i class="fas fa-file-alt"></i> Research</a>
-</button>
-
 
 ## CV
 
