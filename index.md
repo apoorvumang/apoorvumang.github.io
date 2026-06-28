@@ -67,9 +67,6 @@ Member of Technical Staff — September 2025 - Present
 ### Adobe Research, Bangalore
 Research Scientist — June 2022 - August 2025
 
-### IBM Research, Bangalore
-Research Intern — Summer 2019
-
 ### Google, Hyderabad
 Software Engineer, Tools and Infrastructure — May 2016 - Mar 2017
 
