@@ -76,11 +76,11 @@ Software Engineer, Tools and Infrastructure — May 2016 - Mar 2017
 ### PayPal, Chennai
 Software Engineer 1 — July 2015 - November 2015
 
-## Side Projects
+## Projects
 
-### 3D Printing Store: Everything 3D
+### Custom Figurines: Everything 3D
 
-Get custom-designed products, including personalized fridge magnets, desk signs, house nameplates and more! Order your own unique items via the store or follow the latest creations on our Instagram :)
+Everything 3D turns photos into personalized 3D-printed keepsakes, with a current focus on custom figurines for people, couples, teams, and events. Customers send photos, review 3D render options, and receive in-house printed, hand-finished pieces that preserve the likeness, outfit, and overall vibe.
 
 Store: [everything3dindia.com](https://everything3dindia.com/)  
 Instagram: [everything_3d_india](https://www.instagram.com/everything_3d_india/)
@@ -92,15 +92,21 @@ Instagram: [everything_3d_india](https://www.instagram.com/everything_3d_india/)
 <a style="text-decoration: none;" href="https://www.instagram.com/everything_3d_india/"><i class="fab fa-instagram"></i> Follow on Instagram</a>
 </button>
 
-### Podcast transcription and highlight generation
+### TokenPath.ai
 
-I used openai-whisper (along with pyannote and flan-t5) to automatically generate transcripts and highlights for all episodes of The Seen and The Unseen
-podcast by Amit Varma. These can be browsed at [https://apoorvumang.github.io/seenunseen](https://apoorvumang.github.io/seenunseen) <br> <br>
+TokenPath is an API for grounding AI-agent outputs by tracing generated tokens back to the exact source tokens behind them. It grew out of my research on attribution in document-grounded question answering, and provides token-level attribution signals for precise citations, provenance, hallucination gates, and evals.
+
+Website: [tokenpath.ai](https://tokenpath.ai/)  
+Docs: [docs.tokenpath.ai](https://docs.tokenpath.ai/)
+
 <button>
-<a style="text-decoration: none;" href="https://apoorvumang.github.io/seenunseen"><i class="fas fa-play"></i> Website</a>
+<a style="text-decoration: none;" href="https://tokenpath.ai/"><i class="fas fa-link"></i> Website</a>
 </button>
 <button>
-<a style="text-decoration: none;" href="https://github.com/apoorvumang/seenunseen-whisper"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</a>
+<a style="text-decoration: none;" href="https://docs.tokenpath.ai/"><i class="fas fa-fw fa-book" aria-hidden="true"></i> Docs</a>
+</button>
+<button>
+<a style="text-decoration: none;" href="https://arxiv.org/abs/2405.17980"><i class="fas fa-file-alt"></i> Research</a>
 </button>
 
 
