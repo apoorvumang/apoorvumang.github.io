@@ -68,6 +68,17 @@ A simple benchmark to measure the *actual* knowledge cutoff of LLMs, rather than
 <a style="text-decoration: none;" href="https://x.com/apoorv_umang/status/2075646580083048945"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i> X Post</a>
 </button>
 
+### The Seen and the Unseen — Transcripts
+
+A searchable browser for Whisper-generated transcripts of Amit Varma's podcast [The Seen and the Unseen](https://seenunseen.in/), covering 300+ episodes. Read any episode's transcript in a clean, per-episode view.
+
+<button>
+<a style="text-decoration: none;" href="{{site.url}}/seenunseen/"><i class="fas fa-podcast"></i> Browse Transcripts</a>
+</button>
+<button>
+<a style="text-decoration: none;" href="https://github.com/apoorvumang/seenunseen-whisper"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</a>
+</button>
+
 
 ## Selected publications
 **Saxena A.** [Prompt Lookup Decoding](https://github.com/apoorvumang/prompt-lookup-decoding). 
