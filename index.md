@@ -52,6 +52,23 @@ Docs: [docs.tokenpath.ai](https://docs.tokenpath.ai/)
 </button>
 
 
+## Experiments
+
+### Knowledge Cutoff Benchmark
+
+A simple benchmark to measure the *actual* knowledge cutoff of LLMs, rather than the date labs report. The results are surprising: OpenAI and Anthropic are the only major labs keeping their models fresh — most others, including the Chinese labs, lag by 12+ months.
+
+<button>
+<a style="text-decoration: none;" href="https://apoorvumang.github.io/knowledge-cutoff/"><i class="fas fa-chart-bar"></i> Live Benchmark</a>
+</button>
+<button>
+<a style="text-decoration: none;" href="https://github.com/apoorvumang/knowledge-cutoff"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</a>
+</button>
+<button>
+<a style="text-decoration: none;" href="https://x.com/apoorv_umang/status/2075646580083048945"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i> X Post</a>
+</button>
+
+
 ## Selected publications
 **Saxena A.** [Prompt Lookup Decoding](https://github.com/apoorvumang/prompt-lookup-decoding). 
 Developed a method to speed-up LLM decoding, integrated in transformers and vLLM.<br>
