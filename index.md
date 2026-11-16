@@ -4,22 +4,15 @@ author_profile: true
 author: Apoorv Umang Saxena
 toc: true
 ---
-I am a Member of Technical Staff at [Inception](https://inceptionlabs.ai), working from our Bangalore office across the training and inference stack for [Mercury](https://www.inceptionlabs.ai/), our family of diffusion LLMs. Previously I was a Research Scientist at Adobe Research, working on NLP and multi-modal machine learning.
+I am MTS Research at [Collinear AI](https://collinear.ai/). Previously, I worked on diffusion LLMs at Inception and on NLP and multi-modal machine learning at Adobe Research.
 
-I received my PhD from the Department of Computational and Data Sciences (CDS) at the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/), advised by [Prof. Partha Talukdar](https://scholar.google.com/citations?user=CIZwXAcAAAAJ), where I worked on knowledge graph embeddings for question answering ([thesis](https://etd.iisc.ac.in/handle/2005/6082)).
-
-Prior to graduate school, I received my Bachelor of Engineering (BE Hons.) in Computer Science from [Birla Institute of Technology and Science, Pilani (BITS Pilani)](http://www.bits-pilani.ac.in/) in 2015.
-
+I received my PhD from the [Indian Institute of Science, Bangalore](https://www.iisc.ac.in/), advised by [Prof. Partha Talukdar](https://scholar.google.com/citations?user=CIZwXAcAAAAJ), working on knowledge graph question answering ([thesis](https://etd.iisc.ac.in/handle/2005/6082)). Before that, I studied Computer Science at [BITS Pilani](https://www.bits-pilani.ac.in/), graduating in 2015.
 
 ## Research
 
-My work comes down to two questions: **how do you make language models faster without giving up quality**, and **how do you verify that what a model generates is actually supported by what you gave it**.
+My research focuses on **efficient language models** and **grounded generation**.
 
-On speed, I wrote [Prompt Lookup Decoding](https://github.com/apoorvumang/prompt-lookup-decoding), a speculative decoding method now integrated into Hugging Face Transformers and vLLM, and I currently work on inference for diffusion LLMs at Inception.
-
-On grounding, I work on attribution — reading a model's attention to trace generated text back to the exact source spans behind it. That research [shipped in Adobe Acrobat's AI Assistant](https://arxiv.org/abs/2405.17980) and is now the foundation of [TokenPath](https://tokenpath.ai/).
-
-During my PhD I worked on knowledge graph embeddings for question answering. During my undergraduate studies I worked on humanoid robotics and computer vision.
+I wrote [Prompt Lookup Decoding](https://github.com/apoorvumang/prompt-lookup-decoding), now integrated into Hugging Face Transformers and vLLM. My work on attribution [shipped in Adobe Acrobat's AI Assistant](https://arxiv.org/abs/2405.17980).
 
 A full publication list is on [Google Scholar](https://scholar.google.com/citations?user=MpOVpSUAAAAJ).
 
@@ -28,10 +21,7 @@ A full publication list is on [Google Scholar](https://scholar.google.com/citati
 
 ### Everything 3D
 
-Get custom 3D-printed figurines and personalized keepsakes made from your photos. Order a unique gift from the store or follow the latest creations on Instagram :)
-
-Store: [everything3dindia.com](https://everything3dindia.com/)  
-Instagram: [everything_3d_india](https://www.instagram.com/everything_3d_india/)
+Custom 3D-printed figurines and keepsakes made from your photos.
 
 <button>
 <a style="text-decoration: none;" href="https://everything3dindia.com/"><i class="fas fa-store"></i> Visit Store</a>
@@ -42,10 +32,7 @@ Instagram: [everything_3d_india](https://www.instagram.com/everything_3d_india/)
 
 ### TokenPath.ai
 
-TokenPath is an API for grounding AI-agent outputs by tracing generated tokens back to the exact source tokens behind them. It grew out of my research on attribution in document-grounded question answering, and provides token-level attribution signals for precise citations, provenance, hallucination gates, and evals.
-
-Website: [tokenpath.ai](https://tokenpath.ai/)  
-Docs: [docs.tokenpath.ai](https://docs.tokenpath.ai/)
+An API that traces AI-generated text back to its sources, built from my research on attribution.
 
 <button>
 <a style="text-decoration: none;" href="https://tokenpath.ai/"><i class="fas fa-link"></i> Website</a>
@@ -62,7 +49,7 @@ Docs: [docs.tokenpath.ai](https://docs.tokenpath.ai/)
 
 ### Knowledge Cutoff Benchmark
 
-A simple benchmark to measure the *actual* knowledge cutoff of LLMs, rather than the date labs report. The results are surprising: OpenAI and Anthropic are the only major labs keeping their models fresh — most others, including the Chinese labs, lag by 12+ months.
+A benchmark measuring the actual knowledge cutoff of LLMs.
 
 <button>
 <a style="text-decoration: none;" href="https://apoorvumang.github.io/knowledge-cutoff/"><i class="fas fa-chart-bar"></i> Live Benchmark</a>
@@ -76,7 +63,7 @@ A simple benchmark to measure the *actual* knowledge cutoff of LLMs, rather than
 
 ### Retrieval vs Recall
 
-Agentic search benchmarks may not measure search. Running WideSearch with retrieval turned *off*, one frontier model scored slightly **better** without it — the tasks are built from facts old enough to answer from memory. Rebuilt on post-cutoff events, the ranking changed. Write-up published on the Inception blog.
+An experiment testing whether agentic search benchmarks measure retrieval or recall. Published on the Inception blog.
 
 <button>
 <a style="text-decoration: none;" href="https://www.inceptionlabs.ai/blog/mercury-2-for-search"><i class="fas fa-file-alt"></i> Write-up</a>
@@ -87,7 +74,7 @@ Agentic search benchmarks may not measure search. Running WideSearch with retrie
 
 ### The Seen and the Unseen — Transcripts
 
-A searchable browser for Whisper-generated transcripts of Amit Varma's podcast [The Seen and the Unseen](https://seenunseen.in/), covering 300+ episodes. Read any episode's transcript in a clean, per-episode view.
+Searchable transcripts of 300+ episodes of Amit Varma's podcast [The Seen and the Unseen](https://seenunseen.in/).
 
 <button>
 <a style="text-decoration: none;" href="{{site.url}}/seenunseen/"><i class="fas fa-podcast"></i> Browse Transcripts</a>
@@ -150,35 +137,33 @@ A. Phukan, S. Somasundaram, **A. Saxena**, K. Goswami & B.V. Srinivasan. ["Peeri
 
 ## Work Experience
 
-### Inception, Bangalore
-Member of Technical Staff — September 2025 - Present
+### <img class="work-logo" src="{{ '/assets/images/work/collinear.png' | relative_url }}" alt="" width="40" height="40"> Collinear AI
+{: #collinear-ai .work-title }
+MTS Research — November 2026 - Present
 
-Working across the training and inference stack for the Mercury series of diffusion LLMs.
+### <img class="work-logo" src="{{ '/assets/images/work/inception.png' | relative_url }}" alt="" width="40" height="40"> Inception, Bangalore
+{: #inception-bangalore .work-title }
+Member of Technical Staff — September 2025 - November 2026
 
-- Core algorithmic work on application-specific decoding performance, including a 2x speedup on Mercury Edit
-- Led post-training of Mercury 2 for an enterprise query-rewrite workload — quality parity with their production Gemini baseline, 2.5x faster
-- Tool-calling data and evaluation for the Mercury 2 and Mercury 2.5 releases
-- Work with search and answer-engine customers on agentic retrieval pipelines
+Training and inference for the Mercury family of diffusion LLMs.
 
-### Adobe Research, Bangalore
+### <img class="work-logo" src="{{ '/assets/images/work/adobe.png' | relative_url }}" alt="" width="40" height="40"> Adobe Research, Bangalore
+{: #adobe-research-bangalore .work-title }
 Research Scientist — June 2022 - August 2025
 
-Document Experiences Lab — research on LLMs for document understanding, generation and grounding, taken from idea to shipped product.
+LLMs for document understanding, generation and grounding in the Document Experiences Lab.
 
-- Shipped attribution into Acrobat's AI Assistant, giving users sentence-level grounding for answers over long documents
-- Contributor to the first Adobe Firefly image model
-- 15+ papers at ACL, EMNLP, NAACL, ICCV, EACL and INLG; 12+ patents filed
-- Mentored interns and junior researchers, several of whom led first-author papers at ACL, NAACL and EMNLP
-
-### Google, Hyderabad
+### <img class="work-logo" src="{{ '/assets/images/work/google.png' | relative_url }}" alt="" width="40" height="40"> Google, Hyderabad
+{: #google-hyderabad .work-title }
 Software Engineer, Tools and Infrastructure — May 2016 - Mar 2017
 
-### PayPal, Chennai
+### <img class="work-logo" src="{{ '/assets/images/work/paypal.png' | relative_url }}" alt="" width="40" height="40"> PayPal, Chennai
+{: #paypal-chennai .work-title }
 Software Engineer 1 — July 2015 - November 2015
 
 ## Teaching
 
-Guest lecturer on **LLM decoding** in [Introduction to Natural Language Processing (DS 207)](https://danishpruthi.com/teaching/ds-207-jan-2026/) at the Indian Institute of Science, invited two years running (2025 and 2026). Course by Prof. Danish Pruthi.
+Guest lectures on **LLM decoding** at IISc in Prof. Danish Pruthi's [Introduction to NLP (DS 207)](https://danishpruthi.com/teaching/ds-207-jan-2026/), 2025 and 2026.
 
 ## CV
 
@@ -188,6 +173,6 @@ Guest lecturer on **LLM decoding** in [Introduction to Natural Language Processi
 
 ### Email
 
-apoorv [at] inceptionlabs.ai
+[apoorv@collinear.ai](mailto:apoorv@collinear.ai)
 <br />
 apoorvumang [at] gmail.com
