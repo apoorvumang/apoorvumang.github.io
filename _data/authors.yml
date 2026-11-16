@@ -2,15 +2,15 @@
 
 Apoorv Umang Saxena:
   name        : "Apoorv Umang Saxena"
-  bio         : "Member of Technical Staff at Inception Labs"
+  bio         : "MTS Research at Collinear AI"
   avatar      : "/assets/images/apoorv.jpg"
   links:
     - label: "Bangalore, India"
       icon: "fas fa-fw fa-map-marker-alt"
       url: /
-    - label: "apoorv [at] inceptionlabs.ai"
+    - label: "apoorv@collinear.ai"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:apoorv@inceptionlabs.ai"
+      url: "mailto:apoorv@collinear.ai"
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://www.github.com/apoorvumang/"

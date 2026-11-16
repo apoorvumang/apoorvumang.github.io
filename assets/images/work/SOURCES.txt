@@ -1,0 +1,12 @@
+# Work experience logos
+
+Logos are stored locally so the homepage does not depend on third-party image services.
+Downloaded from the companies' official sites on 2026-11-16:
+
+- Collinear: https://collinear.ai/assets/webflow-migrated/69a812113de68941bebf505f/69a81a65a6b1abf490a7142a_Collinear-favicon-256.png
+- Inception: https://framerusercontent.com/images/y5L2OctMTnQDhiVDBUBArywmSY.png (linked as the Apple touch icon at https://www.inceptionlabs.ai/)
+- Adobe: https://www.adobe.com/favicon.ico (converted to PNG)
+- Google: https://www.gstatic.com/images/branding/product/2x/googleg_96dp.png
+- PayPal: https://www.paypalobjects.com/webstatic/icon/pp258.png
+
+Each logo belongs to its respective company.

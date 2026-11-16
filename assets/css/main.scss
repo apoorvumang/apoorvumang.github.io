@@ -6,3 +6,18 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.page__content h3.work-title {
+  display: flex;
+  align-items: center;
+  gap: 0.65em;
+}
+
+.page__content .work-logo {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border-radius: 6px;
+  object-fit: contain;
+}
